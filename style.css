@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+
+p::first-letter {
+  font-size: 3rem;
+}
+
+h1::before {
+  content: "+=";
+}
+
+p::after {
+  content: "*&x";
+}
