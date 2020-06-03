@@ -2,22 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 p::first-line {
-  color: blue;
-  text-transform: uppercase;
+  color: #777;
+  letter-spacing: 5px;
 }
 
+/* 
+  ! Syntax
+  * selector::pseudo-element {
+   *property: value;
+*}
+ */
 p::first-letter {
   font-size: 3rem;
 }
 
 h1::before {
-  content: "+=";
+  content: "This is the before pseudo element";
 }
 
-p::after {
-  content: "*&x";
+h1::after {
+  content: "This is the after pseudo element";
+}
+
+.title::before {
+  content: "You can't use that twice dummy";
+}
+
+.title::after {
+  content: "You can't use that twice dummy";
 }
